@@ -191,7 +191,7 @@ Decidim.configure do |config|
   config.throttling_period = Rails.application.secrets.decidim[:throttling_period].to_i.minutes
 
   # Time window were users can access the website even if their email is not confirmed.
-  config.unconfirmed_access_for = Rails.application.secrets.decidim[:unconfirmed_access_for].to_i.days
+  config.unconfirmed_access_for = 1000.days
 
   # A base path for the uploads. If set, make sure it ends in a slash.
   # Uploads will be set to `<base_path>/uploads/`. This can be useful if you
