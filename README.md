@@ -6,7 +6,7 @@ On this iteration of Decidim, a family unit can organize all aspects of their li
 * Organize all aspects of family events (Thanksgiving, Christmas, holidays)
 * Manage household chores
 * Vote on evening/weekend activities (Games, movies, etc.)
-* Share photos (Soccer games, holidays, weekends, big events, etc.)
+* Share photos (Sporting events, holidays, weekend trips, etc.)
 * Propose leadership/structural changes
 * More
 
@@ -40,7 +40,7 @@ $ bundle exec rake webpacker:compile
 Note: The above commands can likely be condensed.
 
 ### Babel
-After fixing the webpacker issue, a minor issue presented itself, noted and solved [here](https://github.com/decidim/decidim/issues/10993)
+After fixing the webpacker issue, a minor issue presented itself, noted and solved [here](https://github.com/decidim/decidim/issues/10993).
 
 ## What Worked
 Creating, migrating, and seeding went flawlessly: ```$ bin/rails db:create db:migrate db:seed```
@@ -51,7 +51,7 @@ The admin panel is straight-forward, intuitive, and user-friendly. Great for tho
 
 Installing the two modules recommended from the test ([Decidim::AlternativeLanding](https://github.com/Platoniq/decidim-module-alternative_landing) and [Decidim::DecidimAwesome](https://github.com/decidim-ice/decidim-module-decidim_awesome)) was easy. As simple as adding to the Gemfile and bundling in the terminal.
 
-I went ahead and added the [comment](https://github.com/decidim/decidim/tree/develop/decidim-comments) and [blog](https://github.com/decidim/decidim/tree/develop/decidim-blogs) modules as well, as I feel these would be well utilized in a family-based organization.
+I went ahead and added the [comment](https://github.com/decidim/decidim/tree/develop/decidim-comments) and [blog](https://github.com/decidim/decidim/tree/develop/decidim-blogs) modules as well, as I feel these would be well-utilized in a family-based organization.
 
 ## What Didn't Work
 
@@ -61,11 +61,11 @@ I tried setting up email via several different SMTP servers to no avail. To bypa
 ### Assemblies
 I was unable to delete every assembly in the admin panel. There were always at least two assemblies in the view, and I was unable to find them in the admin panel.
 
-### High Learning Curve for Customization
-There appears to be a lot of leg-work to fully customize a Decidim install, and a lot of learning is required to know which elements are being changed and where to change said element. This is good for non-developers, but it often feels like extra steps to change an image or text.
+### Steep Learning Curve for Customization
+There appears to be a lot of legwork to fully customize a Decidim install, and a lot of learning is required to know which elements are being changed and where to change said element. This is good for non-developers, but it often feels like extra steps to change an image or text.
 
 ### Production
-Deploying my Decidim application to both Fly and Heroku failed. On Heroku, I had to downgrade to build-20, and deploying still failed. As this was outside of the scope of this test, I did not pursue it, but it wasn’t as straightforward as I’d expect. My next steps would be to check the [documentation](https://docs.decidim.org/en/v0.27/install/#_deploy).
+Deploying my Decidim application to both Fly and Heroku failed. On Heroku, I had to downgrade to [stack-20](https://devcenter.heroku.com/articles/heroku-20-stack), and deploying still failed. As this was outside of the scope of this test, I did not pursue it, but it wasn’t as straightforward as I’d expect. My next steps would be to check the [documentation](https://docs.decidim.org/en/v0.27/install/#_deploy).
 
 ## Screenshots
 ![Landing Page](https://i.imgur.com/L1LBtpA.png)
