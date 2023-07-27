@@ -38,3 +38,5 @@ group :production do
 end
 gem "decidim-alternative_landing", git: "https://github.com/Platoniq/decidim-module-alternative_landing"
 gem "decidim-decidim_awesome"
+gem 'decidim-comments'
+gem 'decidim-blogs'
